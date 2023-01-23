@@ -4,7 +4,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class FileInfo {
-	private SimpleIntegerProperty index  = new SimpleIntegerProperty();;
+	private SimpleStringProperty index  = new SimpleStringProperty();;
 	private SimpleStringProperty name = new SimpleStringProperty();
 	private SimpleStringProperty url = new SimpleStringProperty();
 	private SimpleStringProperty status = new SimpleStringProperty();  // DOWNLOADING or DONE or STARTING
@@ -13,7 +13,7 @@ public class FileInfo {
 	// add progress bar, percentage later etc
 	
 	
-	public FileInfo(int index, String name, String url,
+	public FileInfo(String index, String name, String url,
 			String status, String action, String path) {
 		super();
 		this.index.set(index);
@@ -24,17 +24,17 @@ public class FileInfo {
 		this.path.set(path);
 	}
 	
-	public int getIndex() {
+	public String getIndex() {
 		return index.get();
 	}
 
 
-	public SimpleIntegerProperty indexProperty() {
+	public SimpleStringProperty indexProperty() {
 		return index;
 	}
 
 
-	public void setIndex(int index) {
+	public void setIndex(String index) {
 		this.index.set(index);;
 	}
 

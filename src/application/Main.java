@@ -18,7 +18,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			
 			// Manual code
-			primaryStage.setTitle("Hello World");
+			primaryStage.setTitle("Download Manager v1.0");
 			
 			primaryStage.setScene(scene);
 			primaryStage.show();
